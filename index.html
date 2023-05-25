@@ -6,13 +6,237 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Enlaces -->
     <!-- Externos -->
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous">
+    </script>
     <!-- Internos -->
     <link rel="stylesheet" href="CSS/main.css">
+    <link rel="icon" href="IMG/Logos/logo - amarillo.png">
 
     <title>Augustus Palace</title>
 </head>
 <body>
     
+    <!-- Navegacion --> 
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="IMG/Logos/logo - amarillo.png" alt="logo">
+                Augustus Palace
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Servicios
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Servicio 1</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Servicio 2</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Servicio 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Contacto</a>
+                    </li>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido -->
+    <!-- Carrusel -->
+    <section class="container mt-5">
+        <h1 style="color: white;">.</h1>
+        <h1>Destinos Populares</h1>
+        <div id="carouselIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3" 
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="4" 
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="5" 
+                    aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="IMG/Especiales/45.png" class="d-block w-100" alt="img1">
+                    
+                </div>
+                <div class="carousel-item">
+                    <img src="IMG/4/03.jpg" class="d-block w-100" alt="img2">
+                    <div class="carousel-caption de-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="IMG/3/02.jpg" class="d-block w-100" alt="img3">
+                    <div class="carousel-caption de-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="IMG/2/03.png" class="d-block w-100" alt="img4">
+                    <div class="carousel-caption de-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="IMG/5+/27.jpg" class="d-block w-100" alt="img5">
+                    <div class="carousel-caption de-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="IMG/Especiales/40.jpg" class="d-block w-100" alt="img5">
+                    <div class="carousel-caption de-none d-md-block">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+    <!-- Seccion 1 -->
+    <section class="container mt-5">
+        <h1>Encuentra el hotel de tus sueños</h1>
+        <p style="text-align: justify;">
+            Descubre una amplia selección de hoteles de alta calidad y comodidad, clasificados en secciones de 1 a 5 estrellas, 
+            junto con una seccion especial para opciones únicas. Nuestras secciones de alojamiento abarcan desde opciones económicas hasta experiencias lujosas.
+            <br> 
+            Encuentra la opción perfecta que se ajuste a tus necesidades y deseos. Haz de tu próxima estadía una experiencia extraordinaria con nosotros.
+        </p>
+        <div class="row justify-content-center">
+            <div class="col-md-3 m-1">
+                <div class="card" style="width: 100%; height: 100%;">
+                    <img src="IMG/1/estrella.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hoteles 1 Estrella</h5>
+                        <p class="card-text">
+                            
+                        </p>
+                        <a href="Pages/1-estrella.html" class="btn btn-primary">Ver hoteles </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 m-1">
+                <div class="card" style="width: 100%; height: 100%;">
+                        <img src="IMG/2/estrella.png" class="card-img-top" alt="img1">
+                        <div class="card-body">
+                        <h5 class="card-title">Hoteles 2 Estrellas</h5>
+                        <p class="card-text">
+                            
+                        </p>
+                        <a href="Pages/2-estrellas.html" class="btn btn-primary">Ver hoteles </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 m-1">
+                <div class="card" style="width: 100%; height: 100%;">
+                    <img src="IMG/3/estrella.png" class="card-img-top" alt="img2">
+                    <div class="card-body">
+                        <h5 class="card-title">Hoteles 3 Estrellas</h5>
+                        <p class="card-text">
+                            
+                        </p>
+                        <a href="Pages/3-estrellas.html" class="btn btn-primary">Ver hoteles </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 m-1">
+                <div class="card" style="width: 100%; height: 100%;">
+                    <img src="IMG/4/estrella.png" class="card-img-top" alt="img3">
+                    <div class="card-body">
+                        <h5 class="card-title">Hoteles 4 Estrellas</h5>
+                        <p class="card-text">
+                            
+                        </p>
+                        <a href="Pages/4-estrellas.html" class="btn btn-primary">Ver hoteles </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 m-1">
+                <div class="card" style="width: 100%; height: 100%;">
+                    <img src="IMG/5+/estrella.png" class="card-img-top" alt="img3">
+                    <div class="card-body">
+                        <h5 class="card-title">Hoteles 5 Estrellas</h5>
+                        <p class="card-text">
+                            
+                        </p>
+                        <a href="Pages/5-estrllas.html" class="btn btn-primary">Ver hoteles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 m-1">
+                <div class="card" style="width: 100%; height: 100%;">
+                    <img src="IMG/Especiales/estrella.png" class="card-img-top" alt="img3">
+                    <div class="card-body">
+                        <h5 class="card-title">Hoteles Especiales</h5>
+                        <p class="card-text">
+                            
+                        </p>
+                        <a href="Pages/Especial.html" class="btn btn-primary">Ver hoteles </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de pagina -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>
+                        <img src="IMG/Logos/logo - amarillo.png" alt="logo" width="75px" height="50px">
+                        &copy; 2023 Augustus Palace. Todos los derechos reservados.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-inline text-md-end">
+                    <li class="list-inline-item"><a href="#">Inicio</a></li>
+                    <li class="list-inline-item"><a href="#">Acerca de</a></li>
+                    <li class="list-inline-item"><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
 </body>
 </html>
